@@ -21,10 +21,26 @@ a, a:hover, a:focus {
     transition: all 0.3s;
 }
 
+#content{
+  margin: auto;
+  text-align: center;
+}
+
+#about{
+  margin: inherit;
+  text-align: inherit;
+}
+
 #sidebarCollapse {
+  margin-left: 250px;
    width: 40px;
    height: 40px;
    background: #f5f5f5;
+}
+
+#sidebarCollapse.active{
+  margin-left: 80px;
+  transition: all .3s;
 }
 
 #sidebarCollapse span {
@@ -62,6 +78,7 @@ a, a:hover, a:focus {
   height: 100vh;
   background: #4d88ff;
   color: #fff;
+  position: fixed;
   transition: all 0.3s;
 }
 
